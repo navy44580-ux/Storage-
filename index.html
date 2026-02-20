@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공간을더하다 | 나만의 보물 창고</title>
+    <title>공간을더하다 | 도심 속 나만의 창고</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -152,18 +152,18 @@
             </div>
             <div class="text-center p-6 rounded-2xl bg-green-50 border-2 border-green-200 hover:shadow-lg transition">
                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-map-marked-alt text-white text-2xl"></i></div>
-                <h3 class="text-lg font-bold text-gray-900 mb-3">직접 공간을 선택하는 위치와 유닛 선정</h3>
-                <p class="text-gray-600 text-sm">실시간 원하는 위치와 유닛을 직접 골라 예약하세요.</p>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">직접 공간을 선택하는 위치선정</h3>
+                <p class="text-gray-600 text-sm">실시간 지도에서 원하는 위치를 직접 골라 예약하세요.</p>
             </div>
             <div class="text-center p-6 rounded-2xl bg-green-50 border-2 border-green-200 hover:shadow-lg transition">
                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-shield-alt text-white text-2xl"></i></div>
                 <h3 class="text-lg font-bold text-gray-900 mb-3">24시간 보안 시스템</h3>
-                <p class="text-gray-600 text-sm">CCTV 보안으로 안전하게 보관합니다.</p>
+                <p class="text-gray-600 text-sm">CCTV와 경찰 연계 시스템으로 안전하게 보관합니다.</p>
             </div>
             <div class="text-center p-6 rounded-2xl bg-green-50 border-2 border-green-200 hover:shadow-lg transition">
                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-calendar-check text-white text-2xl"></i></div>
                 <h3 class="text-lg font-bold text-gray-900 mb-3">365일 자유 출입</h3>
-                <p class="text-gray-600 text-sm">언제든지 자유롭게 24시간 방문하여 물건을 보관하거나 꺼낼 수 있습니다.</p>
+                <p class="text-gray-600 text-sm">언제든지 자유롭게 방문하여 물건을 보관하거나 꺼낼 수 있습니다.</p>
             </div>
         </div>
     </div>
@@ -234,7 +234,7 @@
                         <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 골프백, 자전거, 캠핑용품 최적화
                     </li>
                     <li class="flex items-center text-lg text-gray-700 font-semibold">
-                        <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 24시간 항온항습 / CCTV 보안녹화
+                        <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 24시간 항온항습 / CCTV 철저 보안
                     </li>
                     <li class="flex items-center text-lg text-gray-700 font-semibold">
                         <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 365일 24시간 자유로운 상시 출입
@@ -253,7 +253,7 @@
 <section id="map" class="py-24 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">사용가능한 유닛</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">사용가능한 공간</h2>
             <p class="text-gray-600">초록색 칸은 선택 가능, 회색 칸은 사용 중입니다. 원하는 위치를 클릭하세요.</p>
             <div class="flex justify-center mt-8 gap-8 text-sm font-medium">
                 <div class="flex items-center"><span class="w-6 h-6 available rounded-lg mr-2 border-2"></span><span class="font-semibold">사용 가능</span></div>
@@ -286,7 +286,7 @@
                         <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
                             <i class="fas fa-map-marker-alt text-primary mr-3 text-2xl"></i>주소
                         </h3>
-                        <p class="text-gray-700 mb-5 leading-relaxed">경기도 안양시 만안구 안양로 285<br>지하 2층 A동 (안양_아이에스비즈타워)</p>
+                        <p class="text-gray-700 mb-5 leading-relaxed">경기도 안양시 만안구 안양로 285<br>지하 2층 A동 (안양_아이메스비즈타워)</p>
                         <!-- ✅ 길찾기 URL 하드코딩 -->
                         <a href="https://map.naver.com/p/entry/place/1875730793?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602201157&locale=ko&svcName=map_pcv5"
                            target="_blank" rel="noopener noreferrer"
@@ -334,7 +334,7 @@
 <div id="selectionModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 modal-enter">
         <h3 id="selectedUnitId" class="text-2xl font-bold text-gray-900 mb-6"></h3>
-        <p class="text-gray-600 mb-8 leading-relaxed">이 공간을 예약하시려면 네이버 스마트스토어로 이동하여 결제를 진행해 주세요. 결제 시 <strong class="text-primary">원하시는 유닛 번호</strong>를 꼭 입력해 주세요!</p>
+        <p class="text-gray-600 mb-8 leading-relaxed">이 공간을 예약하시려면 네이버 스마트스토어로 이동하여 결제를 진행해 주세요. 결제 시 <strong class="text-primary">원하시는 공간 번호</strong>를 꼭 입력해 주세요!</p>
         <div class="flex gap-3">
             <button onclick="document.getElementById('selectionModal').classList.add('hidden')"
                     class="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition">취소</button>
@@ -443,22 +443,15 @@
         </div>
 
         <!-- 입력 필드 -->
-        <div class="grid md:grid-cols-3 gap-3 mb-4">
-            <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-1">GitHub 사용자명</label>
-                <input type="text" id="cfgOwner" placeholder="예: myusername"
-                       class="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl text-sm focus:border-primary focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-1">저장소 이름</label>
-                <input type="text" id="cfgRepo" placeholder="예: spacestorage-site"
-                       class="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl text-sm focus:border-primary focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-sm font-semibold text-gray-700 mb-1">Personal Access Token</label>
-                <input type="password" id="cfgToken" placeholder="ghp_xxxxx..."
-                       class="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl text-sm focus:border-primary focus:outline-none">
-            </div>
+        <div class="bg-green-50 border border-green-200 rounded-xl p-3 mb-3 text-sm text-green-700">
+            <i class="fas fa-check-circle mr-1"></i>
+            저장소: <strong>navy44580-ux / Storage-</strong> (코드에 고정됨)
+        </div>
+        <div class="mb-4">
+            <label class="block text-sm font-semibold text-gray-700 mb-1">Personal Access Token (관리자 저장용)</label>
+            <input type="password" id="cfgToken" placeholder="ghp_xxxxx..."
+                   class="w-full px-3 py-2.5 border-2 border-gray-200 rounded-xl text-sm focus:border-primary focus:outline-none">
+            <p class="text-xs text-gray-400 mt-1">* 토큰은 이 기기에만 저장됩니다. 데이터 읽기는 토큰 없이도 자동으로 됩니다.</p>
         </div>
 
         <div id="setupTestResult" class="hidden mb-4 p-3 rounded-xl text-sm font-medium"></div>
@@ -478,7 +471,7 @@
         <div class="grid md:grid-cols-3 gap-8 mb-8">
             <div>
                 <h3 class="text-xl font-bold text-white mb-4">공간을더하다</h3>
-                <p class="text-sm leading-relaxed">나만의 비밀창고<br>개인 창고 서비스</p>
+                <p class="text-sm leading-relaxed">도심 속 안전하고 편리한<br>개인 창고 서비스</p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4">빠른 링크</h4>
@@ -493,7 +486,7 @@
             <div>
                 <h4 class="font-bold text-white mb-4">고객 지원</h4>
                 <p class="text-sm mb-2">영업시간: 24시간 연중무휴</p>
-                <p class="text-sm">24시간 자동 출입 시스템 운영</p>
+                <p class="text-sm">자동 출입 시스템 운영</p>
             </div>
         </div>
 
@@ -547,16 +540,19 @@
 //  GitHub 설정 (API 키는 localStorage에만 보관)
 // ================================================================
 const GH = {
-    get owner() { return localStorage.getItem('gh_owner')  || ''; },
-    get repo()  { return localStorage.getItem('gh_repo')   || ''; },
-    get token() { return localStorage.getItem('gh_token')  || ''; },
-    set owner(v){ localStorage.setItem('gh_owner',  v); },
-    set repo(v) { localStorage.setItem('gh_repo',   v); },
-    set token(v){ localStorage.setItem('gh_token',  v); },
-    ready()     { return !!(this.owner && this.repo && this.token); },
-    apiFile(p)  { return `https://api.github.com/repos/${this.owner}/${this.repo}/contents/${p}`; },
-    rawFile(p)  { return `https://raw.githubusercontent.com/${this.owner}/${this.repo}/main/${p}`; },
-    repoUrl()   { return `https://github.com/${this.owner}/${this.repo}`; }
+    // ★ 저장소 정보 코드에 고정 (토큰 없어도 읽기 가능)
+    OWNER : 'navy44580-ux',
+    REPO  : 'Storage-',
+
+    get token() { return localStorage.getItem('gh_token') || ''; },
+    set token(v){ localStorage.setItem('gh_token', v); },
+
+    canRead()   { return !!(this.OWNER && this.REPO); },          // 읽기: 항상 가능
+    canWrite()  { return !!(this.OWNER && this.REPO && this.token); }, // 쓰기: 토큰 필요
+
+    apiFile(p)  { return `https://api.github.com/repos/${this.OWNER}/${this.REPO}/contents/${p}`; },
+    rawFile(p)  { return `https://raw.githubusercontent.com/${this.OWNER}/${this.REPO}/main/${p}`; },
+    repoUrl()   { return `https://github.com/${this.OWNER}/${this.REPO}`; }
 };
 
 // ================================================================
@@ -656,34 +652,36 @@ async function ghPutBinary(path, base64Data, commitMsg) {
 }
 
 // ================================================================
-//  sitedata.json 로드 (raw URL, 캐시 우회)
+//  sitedata.json 로드
+//  ★ public 저장소 raw URL → 토큰 없어도 누구나 최신 데이터 로드
+//  ★ 관리자/고객/모바일 모두 동일한 데이터 표시됨
 // ================================================================
 async function loadSiteData() {
-    if (!GH.ready()) {
-        setBadge('warn', 'GitHub 미설정');
+    if (!GH.canRead()) {
+        setBadge('warn', 'GitHub 저장소 미설정 — 코드 수정 필요');
         siteData.units = defaultUnits();
         renderAll();
         return;
     }
     try {
-        const url = GH.rawFile('data/sitedata.json') + '?t=' + Date.now();
-        const res = await fetch(url);
+        // 캐시 완전 우회 (모바일 브라우저 캐시 문제 방지)
+        const url = GH.rawFile('data/sitedata.json') + '?nocache=' + Date.now();
+        const res = await fetch(url, { cache: 'no-store' });
         if (res.ok) {
             const d = await res.json();
             siteData.units   = d.units   || defaultUnits();
             siteData.images  = d.images  || [];
             siteData.notices = d.notices || [];
-            setBadge('ok', 'GitHub 연결됨');
+            setBadge('ok', GH.canWrite() ? 'GitHub 연결됨 (관리자 토큰 ✓)' : 'GitHub 연결됨');
         } else if (res.status === 404) {
-            // 아직 파일 없음 → 기본값으로 초기화
             siteData.units = defaultUnits();
-            setBadge('warn', '첫 사용 — 설정 필요');
+            setBadge('warn', 'data/sitedata.json 없음 — 저장소 확인 필요');
         } else {
             throw new Error('HTTP ' + res.status);
         }
     } catch(e) {
         console.warn('로드 실패:', e);
-        setBadge('err', '로드 실패');
+        setBadge('err', '로드 실패 — 네트워크 확인');
         siteData.units = defaultUnits();
     }
     renderAll();
@@ -693,7 +691,7 @@ async function loadSiteData() {
 //  sitedata.json 저장
 // ================================================================
 async function saveSiteData(msg) {
-    if (!GH.ready()) { openSetupModal(); return false; }
+    if (!GH.canWrite()) { openSetupModal(); return false; }
     try {
         const existing = await ghGetFile('data/sitedata.json');
         const sha = existing ? existing.sha : undefined;
@@ -774,7 +772,7 @@ function renderMap() {
         </div>
         <div class="flex justify-center items-end gap-8">
             <div class="flex gap-1" id="rowF-bottom"></div>
-            <div class="w-48 h-16 bg-gray-900 text-white flex items-center justify-center font-extrabold rounded-t-2xl shadow-xl tracking-[0.3em] text-lg">출입구</div>
+            <div class="w-48 h-16 bg-gray-900 text-white flex items-center justify-center font-extrabold rounded-t-2xl shadow-xl" style="letter-spacing:0.2em;font-size:clamp(0.7rem,2vw,1.125rem);">출입구</div>
             <div class="flex flex-col gap-1" id="colA-bottom"></div>
         </div>`;
 
@@ -810,12 +808,12 @@ function renderMap() {
         document.getElementById('adminHint').innerHTML = "<span class='text-green-400 font-bold'>관리자 모드 활성</span> — 칸 클릭으로 상태 변경";
         document.getElementById('adminImgPanel').classList.remove('hidden');
         document.getElementById('writeNoticeBtn').classList.remove('hidden');
-        if (GH.ready()) document.getElementById('ghRepoLink').href = GH.repoUrl();
+        document.getElementById('ghRepoLink').href = GH.repoUrl();
     } else {
         mc.classList.remove('admin-mode');
         pub.classList.add('hidden');
         bar.style.display = 'none';
-        document.getElementById('adminHint').innerText = '관리자만 유닛 상태를 수정할 수 있습니다.';
+        document.getElementById('adminHint').innerText = '관리자만 공간 상태를 수정할 수 있습니다.';
         document.getElementById('adminImgPanel').classList.add('hidden');
         document.getElementById('writeNoticeBtn').classList.add('hidden');
     }
@@ -826,7 +824,7 @@ function unitClick(id) {
         siteData.units[id] = !siteData.units[id];
         renderMap();
     } else if (!siteData.units[id]) {
-        document.getElementById('selectedUnitId').innerText = id + '번 유닛 상세 정보';
+        document.getElementById('selectedUnitId').innerText = id + '번 공간 상세 정보';
         document.getElementById('selectionModal').classList.remove('hidden');
     }
 }
@@ -839,7 +837,7 @@ document.getElementById('adminToggle').onchange = e => {
         const pw = prompt('관리자 비밀번호를 입력해 주세요.');
         if (pw === '1qa2ws3ed') {
             isAdmin = true;
-            if (!GH.ready()) setTimeout(openSetupModal, 400);
+            if (!GH.canWrite()) setTimeout(openSetupModal, 400);
         } else {
             alert('비밀번호가 일치하지 않습니다.');
             e.target.checked = false;
@@ -853,18 +851,18 @@ document.getElementById('adminToggle').onchange = e => {
 };
 
 // ================================================================
-//  변경사항 저장 버튼 (유닛 상태)
+//  변경사항 저장 버튼 (공간 상태)
 // ================================================================
 document.getElementById('publishBtn').onclick = async () => {
     if (!isAdmin) return;
-    if (!GH.ready()) { openSetupModal(); return; }
-    if (!confirm('유닛 상태 변경사항을 GitHub에 저장하시겠습니까?')) return;
+    if (!GH.canWrite()) { openSetupModal(); return; }
+    if (!confirm('공간 상태 변경사항을 GitHub에 저장하시겠습니까?')) return;
 
     const btn = document.getElementById('publishBtn');
     btn.disabled  = true;
     btn.innerHTML = "<div class='spin inline-block mr-2' style='width:18px;height:18px;border-width:2px;'></div> 저장 중...";
 
-    const ok = await saveSiteData('[유닛] 상태 변경');
+    const ok = await saveSiteData('[공간] 상태 변경');
     alert(ok
         ? '✅ 저장 완료!\nGitHub에 반영되어 모든 기기에서 즉시 동기화됩니다.'
         : '❌ 저장 실패\nGitHub 설정을 확인해주세요.');
@@ -919,7 +917,7 @@ function startSlider() {
 document.getElementById('uploadImgBtn').onclick = async () => {
     const files = document.getElementById('imgFileInput').files;
     if (!files.length) { alert('이미지를 선택해주세요.'); return; }
-    if (!GH.ready()) { openSetupModal(); return; }
+    if (!GH.canWrite()) { openSetupModal(); return; }
 
     const statusEl = document.getElementById('imgStatus');
     const btn      = document.getElementById('uploadImgBtn');
@@ -1004,7 +1002,7 @@ function renderNotices() {
 function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 
 document.getElementById('writeNoticeBtn').onclick = () => {
-    if (!GH.ready()) { openSetupModal(); return; }
+    if (!GH.canWrite()) { openSetupModal(); return; }
     curNtcId = null;
     document.getElementById('noticeModalTitle').textContent = '공지사항 작성';
     document.getElementById('noticeTitle').value = '';
@@ -1018,7 +1016,7 @@ async function saveNotice() {
     const title   = document.getElementById('noticeTitle').value.trim();
     const content = document.getElementById('noticeContent').innerHTML.trim();
     if (!title || !content) { alert('제목과 내용을 모두 입력해주세요.'); return; }
-    if (!GH.ready()) { openSetupModal(); return; }
+    if (!GH.canWrite()) { openSetupModal(); return; }
 
     const btn = document.getElementById('saveNoticeBtn');
     btn.disabled  = true;
@@ -1106,8 +1104,6 @@ function insertNoticeImg(input) {
 //  GitHub 설정 모달
 // ================================================================
 function openSetupModal() {
-    document.getElementById('cfgOwner').value = GH.owner;
-    document.getElementById('cfgRepo').value  = GH.repo;
     document.getElementById('cfgToken').value = GH.token;
     document.getElementById('setupTestResult').classList.add('hidden');
     document.getElementById('setupModal').classList.remove('hidden');
@@ -1115,44 +1111,36 @@ function openSetupModal() {
 function closeSetupModal() { document.getElementById('setupModal').classList.add('hidden'); }
 
 async function testAndSaveSetup() {
-    const owner = document.getElementById('cfgOwner').value.trim();
-    const repo  = document.getElementById('cfgRepo').value.trim();
     const token = document.getElementById('cfgToken').value.trim();
     const res   = document.getElementById('setupTestResult');
 
-    if (!owner || !repo || !token) {
+    if (!token) {
         res.className = 'mb-4 p-3 rounded-xl text-sm font-medium bg-red-50 text-red-700';
-        res.textContent = '⚠ 세 항목을 모두 입력해주세요.';
+        res.textContent = '⚠ Personal Access Token을 입력해주세요.';
         res.classList.remove('hidden');
         return;
     }
 
     res.className   = 'mb-4 p-3 rounded-xl text-sm font-medium bg-yellow-50 text-yellow-700';
-    res.textContent = '연결 테스트 중...';
+    res.textContent = '토큰 확인 중...';
     res.classList.remove('hidden');
 
-    // 저장소 존재 확인
     try {
-        const r = await fetch(`https://api.github.com/repos/${owner}/${repo}`, {
+        const r = await fetch(`https://api.github.com/repos/${GH.OWNER}/${GH.REPO}`, {
             headers: { 'Authorization': `token ${token}`, 'Accept': 'application/vnd.github.v3+json' }
         });
-        if (r.status === 404) throw new Error('저장소를 찾을 수 없습니다. 사용자명과 저장소 이름을 확인해주세요.');
-        if (r.status === 401) throw new Error('Token이 유효하지 않습니다.');
+        if (r.status === 401) throw new Error('Token이 유효하지 않습니다. 다시 확인해주세요.');
+        if (r.status === 404) throw new Error('저장소에 접근할 수 없습니다. Token 권한을 확인해주세요.');
         if (!r.ok)            throw new Error('API 오류: ' + r.status);
 
-        // 설정 저장
-        GH.owner = owner;
-        GH.repo  = repo;
-        GH.token = token;
+        GH.token = token;  // ★ 토큰만 저장 (owner/repo는 코드에 고정)
 
         res.className   = 'mb-4 p-3 rounded-xl text-sm font-medium bg-green-50 text-green-700';
-        res.textContent = '✅ 연결 성공! 데이터를 불러옵니다...';
+        res.textContent = '✅ 토큰 확인 완료! 관리자 저장 기능이 활성화됩니다.';
 
-        setTimeout(async () => {
+        setTimeout(() => {
             closeSetupModal();
-            setBadge('warn', '데이터 로딩 중...');
-            document.getElementById('loadingOverlay').style.display = 'flex';
-            await loadSiteData();
+            renderMap(); // 관리자 뱃지 업데이트
         }, 800);
     } catch(e) {
         res.className   = 'mb-4 p-3 rounded-xl text-sm font-medium bg-red-50 text-red-700';
