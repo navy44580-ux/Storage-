@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>공간을더하다 | 도심 속 나만의 창고</title>
+    <title>공간을더하다 | 나만의 보물 창고</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
@@ -152,18 +152,18 @@
             </div>
             <div class="text-center p-6 rounded-2xl bg-green-50 border-2 border-green-200 hover:shadow-lg transition">
                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-map-marked-alt text-white text-2xl"></i></div>
-                <h3 class="text-lg font-bold text-gray-900 mb-3">직접 공간을 선택하는 위치선정</h3>
-                <p class="text-gray-600 text-sm">실시간 지도에서 원하는 위치를 직접 골라 예약하세요.</p>
+                <h3 class="text-lg font-bold text-gray-900 mb-3">직접 공간을 선택하는 위치와 유닛 선정</h3>
+                <p class="text-gray-600 text-sm">실시간 원하는 위치와 유닛을 직접 골라 예약하세요.</p>
             </div>
             <div class="text-center p-6 rounded-2xl bg-green-50 border-2 border-green-200 hover:shadow-lg transition">
                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-shield-alt text-white text-2xl"></i></div>
                 <h3 class="text-lg font-bold text-gray-900 mb-3">24시간 보안 시스템</h3>
-                <p class="text-gray-600 text-sm">CCTV와 경찰 연계 시스템으로 안전하게 보관합니다.</p>
+                <p class="text-gray-600 text-sm">CCTV 보안으로 안전하게 보관합니다.</p>
             </div>
             <div class="text-center p-6 rounded-2xl bg-green-50 border-2 border-green-200 hover:shadow-lg transition">
                 <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6"><i class="fas fa-calendar-check text-white text-2xl"></i></div>
                 <h3 class="text-lg font-bold text-gray-900 mb-3">365일 자유 출입</h3>
-                <p class="text-gray-600 text-sm">언제든지 자유롭게 방문하여 물건을 보관하거나 꺼낼 수 있습니다.</p>
+                <p class="text-gray-600 text-sm">언제든지 자유롭게 24시간 방문하여 물건을 보관하거나 꺼낼 수 있습니다.</p>
             </div>
         </div>
     </div>
@@ -234,7 +234,7 @@
                         <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 골프백, 자전거, 캠핑용품 최적화
                     </li>
                     <li class="flex items-center text-lg text-gray-700 font-semibold">
-                        <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 24시간 항온항습 / CCTV 철저 보안
+                        <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 24시간 항온항습 / CCTV 보안녹화
                     </li>
                     <li class="flex items-center text-lg text-gray-700 font-semibold">
                         <i class="fas fa-check-circle text-primary mr-4 text-2xl"></i> 365일 24시간 자유로운 상시 출입
@@ -253,7 +253,7 @@
 <section id="map" class="py-24 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold text-gray-900 mb-4">사용가능한 공간</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">사용가능한 유닛</h2>
             <p class="text-gray-600">초록색 칸은 선택 가능, 회색 칸은 사용 중입니다. 원하는 위치를 클릭하세요.</p>
             <div class="flex justify-center mt-8 gap-8 text-sm font-medium">
                 <div class="flex items-center"><span class="w-6 h-6 available rounded-lg mr-2 border-2"></span><span class="font-semibold">사용 가능</span></div>
@@ -286,7 +286,7 @@
                         <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
                             <i class="fas fa-map-marker-alt text-primary mr-3 text-2xl"></i>주소
                         </h3>
-                        <p class="text-gray-700 mb-5 leading-relaxed">경기도 안양시 만안구 안양로 285<br>지하 1층 (안양동)</p>
+                        <p class="text-gray-700 mb-5 leading-relaxed">경기도 안양시 만안구 안양로 285<br>지하 2층 A동 (안양_아이에스비즈타워)</p>
                         <!-- ✅ 길찾기 URL 하드코딩 -->
                         <a href="https://map.naver.com/p/entry/place/1875730793?c=15.00,0,0,0,dh&placePath=/home?from=map&fromPanelNum=1&additionalHeight=76&timestamp=202602201157&locale=ko&svcName=map_pcv5"
                            target="_blank" rel="noopener noreferrer"
@@ -334,7 +334,7 @@
 <div id="selectionModal" class="hidden fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
     <div class="bg-white rounded-3xl shadow-2xl max-w-md w-full p-8 modal-enter">
         <h3 id="selectedUnitId" class="text-2xl font-bold text-gray-900 mb-6"></h3>
-        <p class="text-gray-600 mb-8 leading-relaxed">이 공간을 예약하시려면 네이버 스마트스토어로 이동하여 결제를 진행해 주세요. 결제 시 <strong class="text-primary">원하시는 공간 번호</strong>를 꼭 입력해 주세요!</p>
+        <p class="text-gray-600 mb-8 leading-relaxed">이 공간을 예약하시려면 네이버 스마트스토어로 이동하여 결제를 진행해 주세요. 결제 시 <strong class="text-primary">원하시는 유닛 번호</strong>를 꼭 입력해 주세요!</p>
         <div class="flex gap-3">
             <button onclick="document.getElementById('selectionModal').classList.add('hidden')"
                     class="flex-1 px-6 py-3 border-2 border-gray-300 text-gray-700 rounded-xl font-bold hover:bg-gray-50 transition">취소</button>
@@ -478,7 +478,7 @@
         <div class="grid md:grid-cols-3 gap-8 mb-8">
             <div>
                 <h3 class="text-xl font-bold text-white mb-4">공간을더하다</h3>
-                <p class="text-sm leading-relaxed">도심 속 안전하고 편리한<br>개인 창고 서비스</p>
+                <p class="text-sm leading-relaxed">나만의 비밀창고<br>개인 창고 서비스</p>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4">빠른 링크</h4>
@@ -493,7 +493,7 @@
             <div>
                 <h4 class="font-bold text-white mb-4">고객 지원</h4>
                 <p class="text-sm mb-2">영업시간: 24시간 연중무휴</p>
-                <p class="text-sm">자동 출입 시스템 운영</p>
+                <p class="text-sm">24시간 자동 출입 시스템 운영</p>
             </div>
         </div>
 
@@ -815,7 +815,7 @@ function renderMap() {
         mc.classList.remove('admin-mode');
         pub.classList.add('hidden');
         bar.style.display = 'none';
-        document.getElementById('adminHint').innerText = '관리자만 공간 상태를 수정할 수 있습니다.';
+        document.getElementById('adminHint').innerText = '관리자만 유닛 상태를 수정할 수 있습니다.';
         document.getElementById('adminImgPanel').classList.add('hidden');
         document.getElementById('writeNoticeBtn').classList.add('hidden');
     }
@@ -826,7 +826,7 @@ function unitClick(id) {
         siteData.units[id] = !siteData.units[id];
         renderMap();
     } else if (!siteData.units[id]) {
-        document.getElementById('selectedUnitId').innerText = id + '번 공간 상세 정보';
+        document.getElementById('selectedUnitId').innerText = id + '번 유닛 상세 정보';
         document.getElementById('selectionModal').classList.remove('hidden');
     }
 }
@@ -853,18 +853,18 @@ document.getElementById('adminToggle').onchange = e => {
 };
 
 // ================================================================
-//  변경사항 저장 버튼 (공간 상태)
+//  변경사항 저장 버튼 (유닛 상태)
 // ================================================================
 document.getElementById('publishBtn').onclick = async () => {
     if (!isAdmin) return;
     if (!GH.ready()) { openSetupModal(); return; }
-    if (!confirm('공간 상태 변경사항을 GitHub에 저장하시겠습니까?')) return;
+    if (!confirm('유닛 상태 변경사항을 GitHub에 저장하시겠습니까?')) return;
 
     const btn = document.getElementById('publishBtn');
     btn.disabled  = true;
     btn.innerHTML = "<div class='spin inline-block mr-2' style='width:18px;height:18px;border-width:2px;'></div> 저장 중...";
 
-    const ok = await saveSiteData('[공간] 상태 변경');
+    const ok = await saveSiteData('[유닛] 상태 변경');
     alert(ok
         ? '✅ 저장 완료!\nGitHub에 반영되어 모든 기기에서 즉시 동기화됩니다.'
         : '❌ 저장 실패\nGitHub 설정을 확인해주세요.');
